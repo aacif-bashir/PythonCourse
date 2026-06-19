@@ -41,7 +41,7 @@ List Method Table
 | append(item)              | Adds an item to the end of the list.                      |
 | extend(iterable)          | Adds multiple items from an iterable to the list.         |
 | insert(index, item)       | Inserts an item at a specified index.                     |      
-| remove(item)              | Removes the first occurrence of an item.                  |
+| remove(item)              | Removes the first occurrence of an matching item.                  |
 | pop(index)                | Removes and returns the item at the specified index.      |
 | clear()                   | Removes all items from the list.                          |
 | index(item)               | Returns the index of the first occurrence of an item.     |
