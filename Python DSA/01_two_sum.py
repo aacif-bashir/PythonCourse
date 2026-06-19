@@ -10,21 +10,21 @@
 nums = [2, 7, 11, 15]
 target = 9
 
-
-# Approach 1: Brute Force (Nested Loops)
-for index1, data1 in enumerate(nums):
-    for index2, data2 in enumerate(nums[index1+1:], start = index1+1):
-        if data1 + data2 == target:
-            print([index1, index2])
-            break
-
-# Approach 2: Using enumerate
+# Approach 1: Brute Force
 n = len(nums)
 for i in range(n):
     for j in range(i+1, n):
         if nums[i]+ nums[j] == target:
             print([i,j])
             break
+
+# Approach 2:  Using enumerate (Nested Loops)
+for index1, data1 in enumerate(nums):
+    for index2, data2 in enumerate(nums[index1+1:], start = index1+1):
+        if data1 + data2 == target:
+            print([index1, index2])
+            break
+
 
 # Optimal Approach: Hash Map (Dictionary)
 
